@@ -1,0 +1,23 @@
+plugins {
+    id 'groovy'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.13'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.jsoup:jsoup:1.14.3'
+    implementation 'io.github.http-builder-ng:http-builder-ng-core:1.0.4'
+    implementation 'org.slf4j:slf4j-simple:2.0.5'
+}
+
+test {
+    useJUnitPlatform()
+}
